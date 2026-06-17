@@ -1,0 +1,76 @@
+/* Popup Form Styles */
+.popup-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1000;
+  align-items: center;
+  justify-content: center;
+}
+
+.popup-overlay.active {
+  display: flex;
+}
+
+.popup-form {
+  background: var(--white);
+  padding: 32px;
+  max-width: 480px;
+  width: 90%;
+  border: 1px solid var(--border);
+  position: relative;
+}
+
+.popup-form__close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: var(--text-secondary);
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.popup-form__close:hover {
+  color: var(--text-primary);
+}
+
+.popup-form h3 {
+  margin-bottom: 8px;
+}
+
+.popup-form p {
+  color: var(--text-secondary);
+  margin-bottom: 24px;
+  font-size: 0.875rem;
+}
+
+.popup-trigger {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: var(--accent);
+  color: white;
+  border: none;
+  padding: 14px 20px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  z-index: 999;
+}
+
+.popup-trigger:hover {
+  background: var(--accent-hover);
+}

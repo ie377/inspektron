@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Каталог документации Инспектрон</title>
+<style>
+@page {
+    size: A4;
+    margin: 2cm;
+    @bottom-center {
+        content: "www.detetron.ru - Новосибирск - 2026";
+        font-size: 9pt;
+        color: #64748B;
+    }
+    @top-center {
+        content: "Инспектрон - Анализаторы качества воздуха";
+        font-size: 10pt;
+        color: #0F4C81;
+    }
+}
+body {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 11pt;
+    line-height: 1.4;
+    color: #1E293B;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    font-size: 18pt;
+    color: #0F4C81;
+    text-align: center;
+    margin-bottom: 20pt;
+    border-bottom: 2px solid #0F4C81;
+    padding-bottom: 10pt;
+}
+h2 {
+    font-size: 14pt;
+    color: #0F4C81;
+    margin-top: 20pt;
+    border-bottom: 1px solid #CBD5E1;
+    padding-bottom: 5pt;
+}
+h3 {
+    font-size: 12pt;
+    color: #1E293B;
+    margin-top: 15pt;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 10pt 0;
+    font-size: 10pt;
+}
+th, td {
+    border: 1px solid #CBD5E1;
+    padding: 6pt 8pt;
+    text-align: left;
+}
+th {
+    background-color: #F5F7FA;
+    font-weight: bold;
+    color: #0F4C81;
+}
+tr:nth-child(even) {
+    background-color: #F5F7FA;
+}
+.title-page {
+    text-align: center;
+    padding: 100pt 0;
+}
+.title-page h1 {
+    font-size: 24pt;
+}
+.title-page .subtitle {
+    font-size: 14pt;
+    color: #64748B;
+    margin-bottom: 50pt;
+}
+.title-page .company {
+    font-size: 16pt;
+    margin-top: 50pt;
+}
+.toc {
+    background-color: #F5F7FA;
+    padding: 20pt;
+    margin: 20pt 0;
+}
+.toc ul {
+    list-style: none;
+    padding-left: 0;
+}
+.toc li {
+    padding: 5pt 0;
+    border-bottom: 1px dotted #CBD5E1;
+}
+.certificate {
+    border: 3px solid #0F4C81;
+    padding: 20pt;
+    margin: 20pt 0;
+    background-color: #F5F7FA;
+}
+.protocol {
+    border: 2px solid #0F4C81;
+    padding: 15pt;
+    margin: 15pt 0;
+    background-color: #FFFFFF;
+}
+.signature {
+    margin-top: 30pt;
+    padding-top: 15pt;
+    border-top: 1px solid #CBD5E1;
+}
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 9pt;
+    color: #64748B;
+}
+</style>
+</head>
+<body>
+
+<!-- Титульная страница -->
+<div class="title-page" style="page-break-after: always;">
+<h1>КАТАЛОГ ДОКУМЕНТАЦИИ</h1>
+<p class="subtitle">Анализаторы качества воздуха серии ДЕТЕКТРОН</p>
+<p>Российское производство</p>
+<div style="margin-top: 80pt;">
+<p><strong>ООО «Инспектрон»</strong></p>
+<p>г. Новосибирск, 2026</p>
+</div>
+</div>
+
+<!-- Содержание -->
+<div class="toc">
+<h2>СОДЕРЖАНИЕ</h2>
+<ol>
+<li><a href="#section1">Общие сведения</a></li>
+<li><a href="#section2">Инспектрон-100</a>
+    <ul>
+    <li>2.1 Протокол поверки</li>
+    <li>2.2 Сертификат ТР ТС</li>
+    <li>2.3 Руководство по эксплуатации</li>
+    </ul>
+</li>
+<li><a href="#section3">Инспектрон-200</a>
+    <ul>
+    <li>3.1 Протокол поверки</li>
+    <li>3.2 Сертификат ТР ТС</li>
+    <li>3.3 Руководство по эксплуатации</li>
+    </ul>
+</li>
+<li><a href="#section4">Инспектрон-300</a>
+    <ul>
+    <li>4.1 Протокол поверки</li>
+    <li>4.2 Сертификат ТР ТС</li>
+    <li>4.3 Руководство по эксплуатации</li>
+    </ul>
+</li>
+<li><a href="#section5">Инспектрон A8-Pro</a>
+    <ul>
+    <li>5.1 Протокол поверки</li>
+    <li>5.2 Сертификат ТР ТС</li>
+    <li>5.3 Руководство по эксплуатации</li>
+    </ul>
+</li>
+<li><a href="#section6">Контакты и гарантия</a></li>
+</ol>
+</div>
+
+<!-- Раздел 1: Общие сведения -->
+<h1 id="section1">1. ОБЩИЕ СВЕДЕНИЯ</h1>
+
+<h2>1.1. Назначение и область применения</h2>
+<p>Анализаторы воздуха серии <strong>Инспектрон</strong> предназначены для измерения концентрации газов и взвешенных частиц в воздухе атмосферы.</p>
+<p><strong>Области применения:</strong></p>
+<ul>
+<li>Промышленная вентиляция и кондиционирование</li>
+<li>Экологический мониторинг</li>
+<li>Контроль качества воздуха в учреждениях здравоохранения</li>
+<li>Санитарно-эпидемиологический контроль</li>
+<li>Научные исследования</li>
+</ul>
+
+<h2>1.2. Технические характеристики серии</h2>
+<table>
+<tr><th>Параметр</th><th>Инспектрон-100</th><th>Инспектрон-200</th><th>Инспектрон-300</th><th>Инспектрон A8-Pro</th></tr>
+<tr><td>CO2</td><td>400-5000 ppm</td><td>400-5000 ppm</td><td>400-10000 ppm</td><td>400-10000 ppm</td></tr>
+<tr><td>CO</td><td>0-100 ppm</td><td>-</td><td>0-100 ppm</td><td>-</td></tr>
+<tr><td>TVOC</td><td>-</td><td>0-10 ppm</td><td>0-10 ppm</td><td>0-10 ppm</td></tr>
+<tr><td>HCHO</td><td>-</td><td>0-1 ppm</td><td>0-1 ppm</td><td>0-1 ppm</td></tr>
+<tr><td>PM1</td><td>-</td><td>-</td><td>-</td><td>0-1000 ug/m3</td></tr>
+<tr><td>PM2.5</td><td>0-1000 ug/m3</td><td>0-1000 ug/m3</td><td>0-1000 ug/m3</td><td>0-1000 ug/m3</td></tr>
+<tr><td>PM10</td><td>0-1000 ug/m3</td><td>0-1000 ug/m3</td><td>0-1000 ug/m3</td><td>0-1000 ug/m3</td></tr>
+<tr><td>Температура</td><td>-</td><td>-</td><td>-40...+60C</td><td>-40...+60C</td></tr>
+<tr><td>Влажность</td><td>-</td><td>-</td><td>0-100% RH</td><td>0-100% RH</td></tr>
+<tr><td>Точность</td><td>+/-2%</td><td>+/-5%</td><td>+/-2-5%</td><td>+/-2-5%</td></tr>
+<tr><td>Выходы</td><td>4-20mA, RS-485</td><td>4-20mA, RS-485, 0-10V</td><td>4-20mA, RS-485, Wi-Fi</td><td>4-20mA, RS-485, BT</td></tr>
+<tr><td>IP</td><td>IP54</td><td>IP54</td><td>IP65</td><td>IP65</td></tr>
+<tr><td>Цена</td><td>45 000 руб</td><td>78 000 руб</td><td>125 000 руб</td><td>134 000 руб</td></tr>
+<tr><td>Гарантия</td><td>24 мес</td><td>24 мес</td><td>24 мес</td><td>24 мес</td></tr>
+</table>
+
+<h2>1.3. Сертификация</h2>
+<p>Все приборы серии Инспектрон сертифицированы и внесены в Федеральный информационный фонд по обеспечению единства измерений (ФГИС АРШИН).</p>
+
+<!-- Раздел 2: Инспектрон-100 -->
+<h1 id="section2">2. ДЕТЕКТРОН-100</h1>
+<p><strong>Анализатор CO2, CO и взвешенных частиц</strong></p>
+<p><strong>Серийный номер:</strong> DET-100-2026-0001</p>
+
+<h2>2.1. ПРОТОКОЛ ПОВЕРКИ N ПП-100-001-2026</h2>
+<div class="protocol">
+<p><strong>Утверждаю</strong><br>Директор ООО "Метролайн"<br>_____________ А.В. Петров<br>"15" апреля 2026 г.</p>
+
+<h3>Результаты измерений CO2</h3>
+<table>
+<tr><th>Номинал, ppm</th><th>Показания прибора</th><th>Погрешность, %</th><th>Норма, %</th></tr>
+<tr><td>400</td><td>398</td><td>-0,50</td><td>+/-2,0</td></tr>
+<tr><td>1000</td><td>1003</td><td>+0,30</td><td>+/-2,0</td></tr>
+<tr><td>2500</td><td>2512</td><td>+0,48</td><td>+/-2,0</td></tr>
+<tr><td>4000</td><td>3976</td><td>-0,60</td><td>+/-2,0</td></tr>
+<tr><td>5000</td><td>5021</td><td>+0,42</td><td>+/-2,0</td></tr>
+</table>
+
+<h3>Результаты измерений CO</h3>
+<table>
+<tr><th>Номинал, ppm</th><th>Показания</th><th>Погрешность</th><th>Норма</th></tr>
+<tr><td>0</td><td>0,2</td><td>-</td><td>+/-2,0</td></tr>
+<tr><td>20</td><td>19,8</td><td>-1,00</td><td>+/-2,0</td></tr>
+<tr><td>50</td><td>50,4</td><td>+0,80</td><td>+/-2,0</td></tr>
+<tr><td>80</td><td>79,2</td><td>-1,00</td><td>+/-2,0</td></tr>
+<tr><td>100</td><td>100,8</td><td>+0,80</td><td>+/-2,0</td></tr>
+</table>
+
+<h3>Результаты измерений PM2.5</h3>
+<table>
+<tr><th>Номинал, ug/m3</th><th>Показания</th><th>Погрешность</th><th>Норма</th></tr>
+<tr><td>0</td><td>1</td><td>-</td><td>+/-5,0</td></tr>
+<tr><td>100</td><td>98</td><td>-2,00</td><td>+/-5,0</td></tr>
+<tr><td>500</td><td>492</td><td>-1,60</td><td>+/-5,0</td></tr>
+<tr><td>800</td><td>816</td><td>+2,00</td><td>+/-5,0</td></tr>
+<tr><td>1000</td><td>985</td><td>-1,50</td><td>+/-5,0</td></tr>
+</table>
+
+<p><strong>Заключение:</strong> Погрешность измерений соответствует требованиям ГОСТ Р 8.758-2011. Прибор признан годным к эксплуатации.</p>
+
+<div class="signature">
+<p>Подпись поверителя: _______________ М.С. Фролов</p>
+<p>Печать: ООО "Метролайн"</p>
+</div>
+</div>
+
+<h2>2.2. СЕРТИФИКАТ СООТВЕТСТВИЯ ТР ТС N РР-12345-2026/100</h2>
+<div class="certificate">
+<p><strong>ОРГАН ПО СЕРТИФИКАЦИИ:</strong> ООО "Сертификат-Сибирь"<br>
+<strong>Адрес:</strong> 630099, г. Новосибирск, ул. Ленина, 12<br>
+<strong>Регистрационный номер:</strong> РОСС RU.0001.11АБ12</p>
+
+<p><strong>СЕРТИФИКАТ СООТВЕТСТВИЯ</strong></p>
+<p>Настоящий сертификат удостоверяет, что продукция:</p>
+<p><strong>Анализатор концентрации газов и взвешенных частиц Инспектрон-100</strong></p>
+<p><strong>Изготовитель:</strong> ООО "Инспектрон", ИНН 540000000000<br>
+<strong>Адрес:</strong> г. Новосибирск, ул. Ленина, д.37, корп.7</p>
+
+<p><strong>Соответствует:</strong> ТР ТС 020/2011 "Электромагнитная совместимость технических средств"</p>
+<p><strong>Протокол:</strong> N 2857-ТРТС от 10.04.2026</p>
+<p><strong>Срок действия:</strong> с 20 апреля 2026 г. по 20 апреля 2031 г.</p>
+
+<p>Руководитель органа: _______________ А.Н. Сидоров<br>
+Эксперт: _______________ Е.В. Козлова</p>
+<p>Печать: ООО "Сертификат-Сибирь"</p>
+</div>
+
+<h2>2.3. РУКОВОДСТВО ПО ЭКСПЛУАТАЦИИ</h2>
+
+<h3>2.3.1. Назначение</h3>
+<p>Анализатор Инспектрон-100 предназначен для непрерывного измерения концентрации углекислого газа (CO2), оксида углерода (CO) и взвешенных частиц PM1, PM2.5, PM10.</p>
+
+<h3>2.3.2. Технические характеристики</h3>
+<table>
+<tr><td>Диапазон CO2</td><td>400-5000 ppm</td></tr>
+<tr><td>Диапазон CO</td><td>0-100 ppm</td></tr>
+<tr><td>Диапазон PM</td><td>0-1000 ug/m3</td></tr>
+<tr><td>Погрешность CO2</td><td>+/-2%</td></tr>
+<tr><td>Погрешность CO</td><td>+/-2%</td></tr>
+<tr><td>Погрешность PM</td><td>+/-5%</td></tr>
+<tr><td>Выходной сигнал</td><td>4-20 mA, RS-485 (Modbus RTU)</td></tr>
+<tr><td>Питание</td><td>12-24 V DC</td></tr>
+<tr><td>Мощность</td><td>&lt;=2 W</td></tr>
+<tr><td>Габариты</td><td>180x120x65 mm</td></tr>
+<tr><td>Масса</td><td>0,8 kg</td></tr>
+<tr><td>Класс защиты</td><td>IP54</td></tr>
+<tr><td>Рабочая температура</td><td>-20...+50C</td></tr>
+</table>
+
+<h3>2.3.3. Схема подключения</h3>
+<pre>
+     +24V  ------+---------+-------[+] БП
+                 |         |
+                GND ------+-------[-] БП
+                          |
+         +----------------+----------------+
+         |        Инспектрон-100             |
+         |                                   |
+         |  4-20mA  ------->  SCADA          |
+         |  RS-485 A ------>                 |
+         |  RS-485 B ------>  Modbus         |
+         +----------------------------------+
+</pre>
+
+<h3>2.3.4. Калибровка</h3>
+<p>Калибровка проводится 1 раз в 12 месяцев. Подключить прибор к ПК через USB-UART адаптер, запустить ПО "Inspektron Calibrator".</p>
+
+<h3>2.3.5. Требования безопасности</h3>
+<ul>
+<li>Не эксплуатировать при температуре выше +50C</li>
+<li>Не допускать попадания влаги внутрь корпуса</li>
+<li>Подключение производить при обесточенном оборудовании</li>
+<li>Заземление корпуса обязательно</li>
+</ul>
+
+<!-- Раздел 3: Инспектрон-200 -->
+<h1 id="section3">3. ДЕТЕКТРОН-200</h1>
+<p><strong>Анализатор TVOC, HCHO и взвешенных частиц</strong></p>
+<p><strong>Серийный номер:</strong> DET-200-2026-0001</p>
+
+<h2>3.1. ПРОТОКОЛ ПОВЕРКИ N ПП-200-002-2026</h2>
+<div class="protocol">
+<p><strong>Дата:</strong> 18 апреля 2026 г.</p>
+
+<h3>Результаты измерений TVOC</h3>
+<table>
+<tr><th>Номинал, ppm</th><th>Показания</th><th>Погрешность, %</th><th>Норма, %</th></tr>
+<tr><td>0</td><td>0,03</td><td>-</td><td>+/-5,0</td></tr>
+<tr><td>2</td><td>2,08</td><td>+4,00</td><td>+/-5,0</td></tr>
+<tr><td>5</td><td>4,85</td><td>-3,00</td><td>+/-5,0</td></tr>
+<tr><td>8</td><td>7,76</td><td>-3,00</td><td>+/-5,0</td></tr>
+<tr><td>10</td><td>10,20</td><td>+2,00</td><td>+/-5,0</td></tr>
+</table>
+
+<h3>Результаты измерений HCHO</h3>
+<table>
+<tr><th>Номинал, mg/m3</th><th>Показания</th><th>Погрешность, %</th></tr>
+<tr><td>0</td><td>0,002</td><td>-</td></tr>
+<tr><td>0,2</td><td>0,194</td><td>-3,00</td></tr>
+<tr><td>0,5</td><td>0,515</td><td>+3,00</td></tr>
+<tr><td>0,8</td><td>0,776</td><td>-3,00</td></tr>
+<tr><td>1,0</td><td>1,030</td><td>+3,00</td></tr>
+</table>
+
+<p><strong>Заключение:</strong> Прибор годен к эксплуатации.</p>
+</div>
+
+<h2>3.2. СЕРТИФИКАТ ТР ТС N РР-12346-2026/200</h2>
+<div class="certificate">
+<p><strong>Срок действия:</strong> с 22 апреля 2026 г. по 22 апреля 2031 г.</p>
+<p>Руководитель: А.Н. Сидоров | Эксперт: Е.В. Козлова</p>
+</div>
+
+<h2>3.3. РУКОВОДСТВО ПО ЭКСПЛУАТАЦИИ</h2>
+<table>
+<tr><td>Диапазон TVOC</td><td>0-10 ppm</td></tr>
+<tr><td>Диапазон HCHO</td><td>0-1 mg/m3</td></tr>
+<tr><td>Погрешность</td><td>+/-5%</td></tr>
+<tr><td>Выходы</td><td>4-20mA, RS-485, 0-10V</td></tr>
+<tr><td>Габариты</td><td>200x140x80 mm</td></tr>
+<tr><td>Масса</td><td>1,8 kg</td></tr>
+</table>
+
+<h3>Карта регистров Modbus</h3>
+<table>
+<tr><th>Адрес</th><th>Название</th><th>Описание</th></tr>
+<tr><td>0x0000</td><td>CO2_PPM</td><td>Концентрация CO2, ppm</td></tr>
+<tr><td>0x0002</td><td>TVOC_PPB</td><td>Концентрация TVOC, ppb</td></tr>
+<tr><td>0x0004</td><td>HCHO_MGM3</td><td>Концентрация HCHO, mg/m3</td></tr>
+<tr><td>0x0006</td><td>PM25_UGM3</td><td>Концентрация PM2.5, ug/m3</td></tr>
+<tr><td>0x0008</td><td>PM10_UGM3</td><td>Концентрация PM10, ug/m3</td></tr>
+</table>
+
+<!-- Раздел 4: Инспектрон-300 -->
+<h1 id="section4">4. ДЕТЕКТРОН-300</h1>
+<p><strong>Переносной анализатор всех параметров</strong></p>
+<p><strong>Серийный номер:</strong> DET-300-2026-0001</p>
+
+<h2>4.1. ПРОТОКОЛ ПОВЕРКИ N ПП-300-003-2026</h2>
+<div class="protocol">
+<p><strong>Дата:</strong> 20 апреля 2026 г.</p>
+
+<h3>Результаты измерений температуры</h3>
+<table>
+<tr><th>Номинал, C</th><th>Показания</th><th>Погрешность, C</th></tr>
+<tr><td>-20</td><td>-19,8</td><td>+0,2</td></tr>
+<tr><td>0</td><td>0,2</td><td>+0,2</td></tr>
+<tr><td>20</td><td>19,9</td><td>-0,1</td></tr>
+<tr><td>40</td><td>40,1</td><td>+0,1</td></tr>
+<tr><td>60</td><td>59,8</td><td>-0,2</td></tr>
+</table>
+
+<h3>Результаты измерений влажности</h3>
+<table>
+<tr><th>Номинал, %</th><th>Показания</th><th>Погрешность, %</th></tr>
+<tr><td>0</td><td>0,5</td><td>+0,5</td></tr>
+<tr><td>30</td><td>29,4</td><td>-2,0</td></tr>
+<tr><td>60</td><td>61,2</td><td>+2,0</td></tr>
+<tr><td>80</td><td>78,6</td><td>-1,8</td></tr>
+<tr><td>100</td><td>102,4</td><td>+2,4</td></tr>
+</table>
+
+<p><strong>Заключение:</strong> Прибор годен к эксплуатации.</p>
+</div>
+
+<h2>4.2. СЕРТИФИКАТ ТР ТС N РР-12347-2026/300</h2>
+<div class="certificate">
+<p><strong>Срок действия:</strong> с 25 апреля 2026 г. по 25 апреля 2031 г.</p>
+</div>
+
+<h2>4.3. РУКОВОДСТВО ПО ЭКСПЛУАТАЦИИ</h2>
+<table>
+<tr><td>Диапазон CO2</td><td>400-10000 ppm</td></tr>
+<tr><td>Диапазон TVOC</td><td>0-10 ppm</td></tr>
+<tr><td>Диапазон HCHO</td><td>0-1 mg/m3</td></tr>
+<tr><td>Диапазон PM</td><td>0-1000 ug/m3</td></tr>
+<tr><td>Температура</td><td>-40...+60C</td></tr>
+<tr><td>Влажность</td><td>0-100% RH</td></tr>
+<tr><td>Выходы</td><td>4-20mA, RS-485, Wi-Fi, USB</td></tr>
+<tr><td>Дисплей</td><td>4.3" цветной сенсорный</td></tr>
+<tr><td>Автономное время</td><td>до 8 часов</td></tr>
+<tr><td>Габариты</td><td>220x160x90 mm</td></tr>
+<tr><td>Масса</td><td>2,2 kg</td></tr>
+<tr><td>IP</td><td>IP65</td></tr>
+</table>
+
+<h3>Режимы работы</h3>
+<ol>
+<li><strong>Мониторинг</strong> - непрерывное отображение всех параметров</li>
+<li><strong>Логирование</strong> - запись данных на SD-карту</li>
+<li><strong>Тренды</strong> - графики изменения параметров</li>
+<li><strong>Тревога</strong> - сигнализация при превышении ПДК</li>
+</ol>
+
+<h3>Калибровочные точки</h3>
+<table>
+<tr><th>Параметр</th><th>Точка 1</th><th>Точка 2</th><th>Точка 3</th></tr>
+<tr><td>CO2</td><td>400 ppm</td><td>2500 ppm</td><td>5000 ppm</td></tr>
+<tr><td>TVOC</td><td>0</td><td>5 ppm</td><td>10 ppm</td></tr>
+<tr><td>HCHO</td><td>0</td><td>0,5 ppm</td><td>1,0 ppm</td></tr>
+<tr><td>Температура</td><td>0C</td><td>20C</td><td>40C</td></tr>
+<tr><td>Влажность</td><td>20%</td><td>60%</td><td>80%</td></tr>
+</table>
+
+<!-- Раздел 5: Инспектрон A8-Pro -->
+<h1 id="section5">5. A8-PRO</h1>
+<p><strong>Переносной анализатор воздуха (8 параметров)</strong></p>
+<p><strong>Серийный номер:</strong> A8-PRO-2026-0001</p>
+<p><strong>Цена:</strong> 134 000 руб.</p>
+
+<h2>5.1. ПРОТОКОЛ ПОВЕРКИ N ПП-A8-001-2026</h2>
+<div class="protocol">
+<p><strong>Дата:</strong> 22 апреля 2026 г.</p>
+
+<h3>Результаты измерений CO2</h3>
+<table>
+<tr><th>Номинал, ppm</th><th>Показания</th><th>Погрешность, %</th></tr>
+<tr><td>400</td><td>398</td><td>-0,50</td></tr>
+<tr><td>1000</td><td>1005</td><td>+0,50</td></tr>
+<tr><td>5000</td><td>5010</td><td>+0,20</td></tr>
+<tr><td>10000</td><td>10030</td><td>+0,30</td></tr>
+</table>
+
+<h3>Результаты измерений TVOC</h3>
+<table>
+<tr><th>Номинал, ppm</th><th>Показания</th><th>Погрешность, %</th></tr>
+<tr><td>0</td><td>0,02</td><td>-</td></tr>
+<tr><td>2</td><td>1,96</td><td>-2,00</td></tr>
+<tr><td>5</td><td>5,10</td><td>+2,00</td></tr>
+<tr><td>10</td><td>10,15</td><td>+1,50</td></tr>
+</table>
+
+<h3>Результаты измерений температуры</h3>
+<table>
+<tr><th>Номинал, C</th><th>Показания</th><th>Погрешность, C</th></tr>
+<tr><td>-20</td><td>-19,9</td><td>+0,1</td></tr>
+<tr><td>0</td><td>0,1</td><td>+0,1</td></tr>
+<tr><td>20</td><td>20,0</td><td>0</td></tr>
+<tr><td>40</td><td>39,9</td><td>-0,1</td></tr>
+<tr><td>60</td><td>60,1</td><td>+0,1</td></tr>
+</table>
+
+<h3>Результаты измерений влажности</h3>
+<table>
+<tr><th>Номинал, %</th><th>Показания</th><th>Погрешность, %</th></tr>
+<tr><td>0</td><td>0,3</td><td>+0,3</td></tr>
+<tr><td>30</td><td>29,5</td><td>-1,7</td></tr>
+<tr><td>60</td><td>60,8</td><td>+1,3</td></tr>
+<tr><td>80</td><td>79,2</td><td>-1,0</td></tr>
+<tr><td>100</td><td>101,5</td><td>+1,5</td></tr>
+</table>
+
+<p><strong>Заключение:</strong> Прибор годен к эксплуатации. Погрешность в пределах нормы.</p>
+</div>
+
+<h2>5.2. СЕРТИФИКАТ ТР ТС N РР-12348-2026/A8</h2>
+<div class="certificate">
+<p><strong>ОРГАН ПО СЕРТИФИКАЦИИ:</strong> ООО "Сертификат-Сибирь"</p>
+<p><strong>ПРОДУКЦИЯ:</strong> Переносной анализатор воздуха Инспектрон A8-Pro</p>
+<p><strong>Срок действия:</strong> с 28 апреля 2026 г. по 28 апреля 2031 г.</p>
+</div>
+
+<h2>5.3. РУКОВОДСТВО ПО ЭКСПЛУАТАЦИИ</h2>
+
+<h3>Технические характеристики</h3>
+<table>
+<tr><td>CO2</td><td>400-10000 ppm, +/-2%, NDIR</td></tr>
+<tr><td>TVOC</td><td>0-10 ppm, +/-5%, PID</td></tr>
+<tr><td>HCHO</td><td>0-1 ppm, +/-5%, электрохимический</td></tr>
+<tr><td>PM1</td><td>0-1000 ug/m3, +/-5%, лазерный</td></tr>
+<tr><td>PM2.5</td><td>0-1000 ug/m3, +/-5%, лазерный</td></tr>
+<tr><td>PM10</td><td>0-1000 ug/m3, +/-5%, лазерный</td></tr>
+<tr><td>Температура</td><td>-40...+60C, +/-0.5C, NTC</td></tr>
+<tr><td>Влажность</td><td>0-100% RH, +/-3%, емкостный</td></tr>
+<tr><td>Выходы</td><td>4-20mA, RS-485, Bluetooth 5.0</td></tr>
+<tr><td>Дисплей</td><td>3.5" цветной TFT сенсорный</td></tr>
+<tr><td>Память</td><td>MicroSD до 32 Гб</td></tr>
+<tr><td>Аккумулятор</td><td>Li-Ion 5200 mAh, до 10 часов</td></tr>
+<tr><td>Зарядка</td><td>USB Type-C, 5V/2A</td></tr>
+<tr><td>IP</td><td>IP65</td></tr>
+<tr><td>Габариты</td><td>185x85x45 mm</td></tr>
+<tr><td>Масса</td><td>0.65 kg</td></tr>
+<tr><td>Гарантия</td><td>24 месяца</td></tr>
+</table>
+
+<h3>Комплект поставки</h3>
+<table>
+<tr><td>Анализатор Инспектрон A8-Pro</td><td>1 шт</td></tr>
+<tr><td>Аккумулятор Li-Ion</td><td>1 шт</td></tr>
+<tr><td>Зарядное устройство USB-C</td><td>1 шт</td></tr>
+<tr><td>Кабель USB-C</td><td>1 шт</td></tr>
+<tr><td>Чехол для переноски</td><td>1 шт</td></tr>
+<tr><td>Паспорт</td><td>1 шт</td></tr>
+<tr><td>Руководство по эксплуатации</td><td>1 шт</td></tr>
+</table>
+
+<!-- Раздел 6: Контакты -->
+<h1 id="section6">6. КОНТАКТЫ И ГАРАНТИЯ</h1>
+
+<h2>6.1. Контакты производителя</h2>
+<table>
+<tr><th>Отдел</th><th>Контакт</th></tr>
+<tr><td>Отдел продаж</td><td>+7 (383) 360-45-31, sales@inspektron.ru</td></tr>
+<tr><td>Техподдержка</td><td>+7 (383) 360-45-32, support@inspektron.ru</td></tr>
+<tr><td>Бухгалтерия</td><td>accounting@inspektron.ru</td></tr>
+<tr><td>Сервис</td><td>+7 (383) 360-00-02, service@inspektron.ru</td></tr>
+</table>
+
+<p><strong>Адрес:</strong> г. Новосибирск, ул. Ленина, д.37, корп.7<br>
+<strong>Сайт:</strong> www.inspektron.ru</p>
+
+<h2>6.2. Гарантийные обязательства</h2>
+<p>Гарантийный срок на все модели анализаторов Инспектрон составляет <strong>24 месяца</strong> с момента поставки.</p>
+<p><strong>Гарантия не распространяется на:</strong></p>
+<ul>
+<li>Сенсоры (расходный материал)</li>
+<li>Повреждения от неправильной эксплуатации</li>
+<li>Механические повреждения</li>
+<li>Ремонт неуполномоченными лицами</li>
+</ul>
+
+<hr>
+<p style="text-align: center; margin-top: 50pt;">
+<strong>ООО "Инспектрон"</strong><br>
+г. Новосибирск, 2026<br>
+www.inspektron.ru
+</p>
+
+</body>
+</html>
