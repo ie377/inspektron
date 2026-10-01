@@ -1265,3 +1265,168 @@ p { margin-bottom: 1rem; }
     padding: 40px 0;
   }
 }
+
+/* === Дополнения (ред. 01.10.2026): фотоконтент, кейсы, карта, реквизиты === */
+.hp-field {
+  position: absolute !important;
+  left: -9999px !important;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.hero__image,
+.product-hero__image {
+  padding: 24px;
+}
+
+.hero__image img,
+.product-hero__image img,
+.about-hero__image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.about-hero__image {
+  background: var(--white);
+  border: 1px solid var(--border);
+  padding: 24px;
+}
+
+.product-hero__info h2.product-hero__title {
+  font-size: 2.5rem;
+  margin-bottom: 8px;
+}
+
+.price-note {
+  margin-top: 12px;
+  font-size: 0.8125rem;
+  color: var(--text-secondary);
+  max-width: 900px;
+}
+
+.model-cell {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.product-thumb {
+  width: 56px;
+  height: 56px;
+  object-fit: cover;
+  border: 1px solid var(--border);
+  background: var(--white);
+  flex: 0 0 auto;
+}
+
+.cases {
+  padding: 80px 0;
+  background: var(--white);
+  border-top: 1px solid var(--border);
+}
+
+.cases h2 {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.cases__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+.case-card {
+  background: var(--bg-primary);
+  border: 1px solid var(--border);
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.case-card__tag {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.case-card h3 {
+  font-size: 1.125rem;
+  margin-bottom: 0;
+}
+
+.case-card p {
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+  margin-bottom: 0;
+}
+
+.cert-note {
+  max-width: 720px;
+  margin: 32px auto 0;
+  text-align: center;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+.contacts-map {
+  height: 400px;
+  padding: 0;
+  overflow: hidden;
+  display: block;
+}
+
+.contacts-map iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
+}
+
+.supply-list {
+  list-style: none;
+  columns: 2;
+  gap: 40px;
+  margin-top: 12px;
+}
+
+.supply-list li {
+  padding: 8px 0 8px 28px;
+  border-bottom: 1px solid var(--border);
+  position: relative;
+  break-inside: avoid;
+}
+
+.supply-list li::before {
+  content: '✓';
+  position: absolute;
+  left: 4px;
+  color: var(--success);
+  font-weight: 600;
+}
+
+.lead-form {
+  border-top: 1px solid var(--border);
+}
+
+@media (max-width: 1024px) {
+  .cases__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .product-hero__info h2.product-hero__title {
+    font-size: 2rem;
+  }
+
+  .supply-list {
+    columns: 1;
+  }
+}

@@ -26,9 +26,31 @@
   <meta property="og:site_name" content="Инспектрон">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/popup.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+  <link rel="alternate icon" type="image/png" href="img/favicon.png">
+  <link rel="canonical" href="https://inspektron.ru/service.html">
+  <link rel="stylesheet" href="css/fonts.css">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type": "Question", "name": "Как подключить анализатор к контроллеру?", "acceptedAnswer": {"@type": "Answer", "text": "Подключение осуществляется через интерфейс RS-485 (Modbus RTU) или через токовый выход 4–20 мА. Для подключения используйте клеммы питания и интерфейсные выходы согласно схеме подключения в руководстве по эксплуатации. Адрес Modbus по умолчанию: 1."}},
+    {"@type": "Question", "name": "Можно ли использовать прибор во взрывоопасной зоне?", "acceptedAnswer": {"@type": "Answer", "text": "Стандартные модели Инспектрон не предназначены для взрывоопасных зон. Для таких условий требуется специальное исполнение с взрывозащищённым корпусом. Свяжитесь с нашими инженерами для подбора решения под ваши условия."}},
+    {"@type": "Question", "name": "Как часто нужно менять сенсоры?", "acceptedAnswer": {"@type": "Answer", "text": "Срок службы сенсоров зависит от условий эксплуатации. NDIR-сенсоры CO₂ служат 5-7 лет, PID-сенсоры TVOC — 2-3 года, электрохимические сенсоры HCHO — 2-3 года. Мы рекомендуем ежегодную поверку для контроля стабильности показаний."}},
+    {"@type": "Question", "name": "Какой срок поверки?", "acceptedAnswer": {"@type": "Answer", "text": "Межповерочный интервал для анализаторов Инспектрон составляет 12 месяцев. Поверка проводится аккредитованной метрологической лабораторией."}},
+    {"@type": "Question", "name": "Поддерживается ли интеграция с SCADA?", "acceptedAnswer": {"@type": "Answer", "text": "Да, все модели поддерживают протокол Modbus RTU через RS-485. Доступны готовые конфигурации для популярных SCADA-систем: Siemens WinCC, Schneider Vijeo, АРМ «Скада» и других."}},
+    {"@type": "Question", "name": "Как получить техническую поддержку?", "acceptedAnswer": {"@type": "Answer", "text": "Вы можете обратиться в службу поддержки по телефону +7 (383) 360-45-33, по email support@inspektron.ru или через форму на сайте. Режим работы: Пн–Пт 9:00–18:00 (Новосибирск, МСК+4)."}},
+    {"@type": "Question", "name": "Какие типы выходных сигналов поддерживаются?", "acceptedAnswer": {"@type": "Answer", "text": "Анализаторы Инспектрон поддерживают: токовый выход 4-20 мА, интерфейс RS-485 с протоколом Modbus RTU, напряжение 0-10 В (в зависимости от модели). Переносные модели также оснащены Bluetooth и Wi-Fi."}},
+    {"@type": "Question", "name": "Можно ли интегрировать приборы в существующую систему автоматизации?", "acceptedAnswer": {"@type": "Answer", "text": "Да, все анализаторы поддерживают протокол Modbus RTU. Мы предоставляем карты регистров и примеры конфигураций для SCADA-систем: Siemens, Schneider Electric, MasterSCADA и других."}},
+    {"@type": "Question", "name": "Какой срок гарантии и что она покрывает?", "acceptedAnswer": {"@type": "Answer", "text": "Гарантия составляет 24 месяца с момента поставки. Гарантия покрывает все производственные дефекты и неисправности электроники. Гарантия не распространяется на сенсоры (расходный материал) и повреждения, вызванные неправильной эксплуатацией."}},
+    {"@type": "Question", "name": "Осуществляете ли вы доставку в регионы?", "acceptedAnswer": {"@type": "Answer", "text": "Да, мы доставляем продукцию по всей России. Доставка осуществляется транспортными компаниями (Деловые Линии, СДЭК, ПЭК) или почтой России. Самовывоз доступен в офисе г. Новосибирска."}},
+    {"@type": "Question", "name": "Можно ли получить демонстрацию прибора перед покупкой?", "acceptedAnswer": {"@type": "Answer", "text": "Да, мы предоставляем демонстрационные образцы для тестирования. Свяжитесь с отделом продаж для согласования условий. Также вы можете посетить наш офис в Новосибирске для демонстрации и консультации."}},
+    {"@type": "Question", "name": "Какие документы входят в комплект поставки?", "acceptedAnswer": {"@type": "Answer", "text": "Каждый прибор поставляется с: паспортом, руководством по эксплуатации, протоколом первичной поверки, сертификатом соответствия ТР ТС. По запросу предоставляются дополнительные документы."}},
+    {"@type": "Question", "name": "Работаете ли вы с юридическими лицами и по безналичному расчету?", "acceptedAnswer": {"@type": "Answer", "text": "Да, мы работаем с юридическими лицами по безналичному расчету. Для бюджетных организаций возможна оплата по государственным контрактам. Мы предоставляем полный пакет документов для бухгалтерии."}}
+  ]
+}
+  </script>
 </head>
 <body>
   <header class="header">
@@ -55,7 +77,7 @@
           <span></span>
         </button>
         <div class="header__contacts">
-          <a href="tel:+73833600000" class="header__phone">+7 (383) 360-45-32</a>
+          <a href="tel:+73833604532" class="header__phone">+7 (383) 360-45-32</a>
           <a href="contacts.html" class="header__callback">Заказать звонок</a>
         </div>
       </div>
@@ -82,7 +104,7 @@
     <section class="service-block">
       <div class="container">
         <h2>Калибровка и поверка</h2>
-        <p>Каждый прибор Инспектрон проходит первичную поверку перед отгрузкой. Мы используем эталонные газы и оборудование, traceable к государственным эталонам. Периодическая поверка требуется 1 раз в 12 месяцев.</p>
+        <p>Каждый прибор Инспектрон проходит первичную поверку перед отгрузкой. Мы используем эталонные газы и оборудование, прослеживаемое к государственным первичным эталонам. Периодическая поверка требуется 1 раз в 12 месяцев.</p>
         <div class="service-grid">
           <div class="service-card">
             <h3>Калибровка на месте</h3>
@@ -120,7 +142,7 @@
           <div class="service-card">
             <h3>Техническая поддержка</h3>
             <ul>
-              <li><span class="label">Режим работы</span><span class="value">Пн-Пт 9:00-18:00 МСК</span></li>
+              <li><span class="label">Режим работы</span><span class="value">Пн–Пт 9:00–18:00 (Новосибирск, МСК+4)</span></li>
               <li><span class="label">Время отклика</span><span class="value">≤2 часов</span></li>
               <li><span class="label">Каналы связи</span><span class="value">Телефон, email, чат</span></li>
             </ul>
@@ -204,7 +226,7 @@
               </svg>
             </div>
             <div class="faq__answer">
-              <p>Вы можете обратиться в службу поддержки по телефону +7 (383) 360-45-32, по email support@inspektron.ru или через форму на сайте. Режим работы: Пн-Пт 9:00-18:00 МСК.</p>
+              <p>Вы можете обратиться в службу поддержки по телефону +7 (383) 360-45-33, по email support@inspektron.ru или через форму на сайте. Режим работы: Пн–Пт 9:00–18:00 (Новосибирск, МСК+4).</p>
             </div>
           </div>
           <div class="faq__item">
@@ -302,6 +324,7 @@
             <li><a href="det100.html">Инспектрон-100</a></li>
             <li><a href="det200.html">Инспектрон-200</a></li>
             <li><a href="det300.html">Инспектрон-300</a></li>
+            <li><a href="a8-pro.html">Инспектрон A8 Pro</a></li>
             <li><a href="catalog.html">Каталог</a></li>
           </ul>
         </nav>
@@ -315,13 +338,13 @@
         </nav>
         <div class="footer__contacts">
           <h4>Контакты</h4>
-          <p>г. Новосибирск, ул. Ленина, д.37, корп.7</p>
-          <p><a href="tel:+73833600000">+7 (383) 360-45-32</a></p>
+          <p>630099, г. Новосибирск, ул. Ленина, д. 37, офис 412</p>
+          <p><a href="tel:+73833604532">+7 (383) 360-45-32</a></p>
           <p><a href="mailto:sales@inspektron.ru">sales@inspektron.ru</a></p>
         </div>
       </div>
       <div class="footer__bottom">
-        <p>© 2024 Инспектрон. Все права защищены.</p>
+        <p>© 2010–2026 ООО «Инспектрон». Все права защищены.</p>
         <p><a href="privacy.html">Политика конфиденциальности</a></p>
       </div>
     </div>
@@ -335,6 +358,9 @@
     <h3>Обратный звонок</h3>
     <p>Оставьте номер телефона, и мы перезвоним вам в течение 15 минут</p>
     <form action="https://formspree.io/f/movgnzzk" method="POST">
+          <input type="hidden" name="_subject" value="Заявка с сайта inspektron.ru (service.html)">
+                    <input type="hidden" name="_next" value="https://inspektron.ru/thank-you.html">
+                    <input type="text" name="_gotcha" class="hp-field" tabindex="-1" autocomplete="off">
       <div class="form-group">
         <label for="popup-name">Имя *</label>
         <input type="text" id="popup-name" name="name" required>
@@ -358,26 +384,5 @@
 
 <button class="popup-trigger" onclick="openPopup()">Заказать звонок</button>
 
-<script>
-function openPopup() {
-  document.getElementById("popupForm").classList.add("active");
-}
-
-function closePopup() {
-  document.getElementById("popupForm").classList.remove("active");
-}
-
-document.getElementById("popupForm").addEventListener("click", function(e) {
-  if (e.target === this) {
-    closePopup();
-  }
-});
-
-document.addEventListener("keydown", function(e) {
-  if (e.key === "Escape") {
-    closePopup();
-  }
-});
-</script>
 </body>
 </html>

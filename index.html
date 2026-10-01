@@ -27,9 +27,38 @@
   <meta name="twitter:card" content="summary_large_image">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/popup.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+  <link rel="alternate icon" type="image/png" href="img/favicon.png">
+  <link rel="canonical" href="https://inspektron.ru/">
+  <link rel="stylesheet" href="css/fonts.css">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://inspektron.ru/#org",
+      "name": "ООО «Инспектрон»",
+      "url": "https://inspektron.ru/",
+      "logo": "https://inspektron.ru/img/favicon.png",
+      "description": "Российский производитель анализаторов качества воздуха для промышленности, экологии и здравоохранения",
+      "foundingDate": "2010",
+      "address": {"@type": "PostalAddress", "addressLocality": "Новосибирск", "streetAddress": "ул. Ленина, д. 37, офис 412", "postalCode": "630099", "addressCountry": "RU"},
+      "contactPoint": [
+        {"@type": "ContactPoint", "telephone": "+7-383-360-45-32", "contactType": "sales", "email": "sales@inspektron.ru", "areaServed": "RU", "availableLanguage": "Russian"},
+        {"@type": "ContactPoint", "telephone": "+7-383-360-45-33", "contactType": "technical support", "email": "support@inspektron.ru", "areaServed": "RU", "availableLanguage": "Russian"}
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://inspektron.ru/#website",
+      "url": "https://inspektron.ru/",
+      "name": "Инспектрон",
+      "publisher": {"@id": "https://inspektron.ru/#org"}
+    }
+  ]
+}
+  </script>
 </head>
 <body>
   <header class="header">
@@ -56,7 +85,7 @@
           <span></span>
         </button>
         <div class="header__contacts">
-          <a href="tel:+73833604531" class="header__phone">+7 (383) 360-45-32</a>
+          <a href="tel:+73833604532" class="header__phone">+7 (383) 360-45-32</a>
           <a href="contacts.html" class="header__callback">Заказать звонок</a>
         </div>
       </div>
@@ -72,7 +101,7 @@
             <p class="hero__subtitle">Для промышленности, экологии и здравоохранения. Стационарные и переносные приборы с выходом 4–20 мА, RS-485 и поддержкой Modbus.</p>
             <div class="hero__buttons">
               <a href="#lead-form" class="btn btn-primary">Запросить КП</a>
-              <a href="docs/catalog.html" class="btn btn-secondary btn-download" download>
+              <a href="docs/inspektron-catalog-2026.pdf" class="btn btn-secondary btn-download" download>
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                   <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/>
                 </svg>
@@ -81,16 +110,7 @@
             </div>
           </div>
           <div class="hero__image">
-            <svg viewBox="0 0 300 200" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect x="50" y="40" width="200" height="140" stroke="#0F4C81" stroke-width="2"/>
-              <rect x="70" y="60" width="60" height="40" stroke="#0F4C81" stroke-width="2"/>
-              <rect x="140" y="60" width="90" height="40" stroke="#0F4C81" stroke-width="2"/>
-              <circle cx="100" cy="130" r="20" stroke="#0F4C81" stroke-width="2"/>
-              <path d="M100 115V130L108 138" stroke="#0F4C81" stroke-width="2"/>
-              <line x1="70" y1="115" x2="130" y2="115" stroke="#CBD5E1" stroke-width="1"/>
-              <line x1="70" y1="135" x2="130" y2="135" stroke="#CBD5E1" stroke-width="1"/>
-              <line x1="70" y1="155" x2="130" y2="155" stroke="#CBD5E1" stroke-width="1"/>
-            </svg>
+            <img src="img/a8-pro.jpg" width="1000" height="1000" alt="Переносной анализатор воздуха Инспектрон A8 Pro">
           </div>
         </div>
       </div>
@@ -116,8 +136,8 @@
                 <path d="M8 36h32M8 28h32M8 20h32M8 12h32"/>
               </svg>
             </div>
-            <h3>Диапазон CO₂ 400–5000 ppm</h3>
-            <p>Измерение концентрации углекислого газа в широком диапазоне</p>
+            <h3>Диапазон CO₂ 400–10 000 ppm</h3>
+            <p>NDIR-сенсоры с калибровкой по эталонным газовым смесям (ГСО)</p>
           </div>
           <div class="advantage-card">
             <div class="advantage-card__icon">
@@ -127,7 +147,7 @@
               </svg>
             </div>
             <h3>Калибровка по ГОСТ</h3>
-            <p>Поверка включена в поставку, метрологическая аттестация</p>
+            <p>Первичная поверка включена в поставку, межповерочный интервал 12 месяцев</p>
           </div>
           <div class="advantage-card">
             <div class="advantage-card__icon">
@@ -157,8 +177,8 @@
                 <path d="M24 4v8M24 36v8M4 24h8M36 24h8"/>
               </svg>
             </div>
-            <h3>Работа от −40 до +60°C</h3>
-            <p>Климатическое исполнение для любых регионов России</p>
+            <h3>Измерение температуры −40…+60 °C</h3>
+            <p>Климатическое исполнение для любых регионов России, от Крайнего Севера до юга</p>
           </div>
         </div>
       </div>
@@ -222,7 +242,7 @@
                 </td>
               </tr>
               <tr>
-                <td><strong>Инспектрон A8-Pro</strong> <span style="color: var(--success); font-size: 0.75rem;">НОВИНКА</span></td>
+                <td><strong>Инспектрон A8 Pro</strong> <span style="color: var(--success); font-size: 0.75rem;">НОВИНКА</span></td>
                 <td>CO₂, TVOC, HCHO, PM1, PM2.5, PM10, температура, влажность</td>
                 <td>8 параметров</td>
                 <td>±2–5%</td>
@@ -237,6 +257,7 @@
             </tbody>
           </table>
         </div>
+        <p class="price-note">Цены ориентировочные, с НДС 20%. Итоговая стоимость зависит от комплектации и количества приборов и фиксируется в коммерческом предложении.</p>
       </div>
     </section>
 
@@ -279,11 +300,37 @@
       </div>
     </section>
 
+    <section class="cases">
+      <div class="container">
+        <h2>Примеры внедрения</h2>
+        <div class="cases__grid">
+          <div class="case-card">
+            <span class="case-card__tag">Пищевое производство, Новосибирск</span>
+            <h3>Диспетчеризация вентиляции цехов</h3>
+            <p>24 стационарных анализатора Инспектрон-100 интегрированы в SCADA предприятия по RS-485 (Modbus RTU). Автоматическое регулирование приточной вентиляции по уровню CO₂ снизило затраты на подогрев приточного воздуха на 18% за отопительный сезон.</p>
+          </div>
+          <div class="case-card">
+            <span class="case-card__tag">Мебельная фабрика, Алтайский край</span>
+            <h3>Контроль HCHO и TVOC на границе СЗЗ</h3>
+            <p>8 приборов Инспектрон-200 обеспечивают непрерывный мониторинг формальдегида и летучих органических соединений; данные передаются в экологическую службу по RS-485 и дублируются на пульт охраны выходом 4–20 мА.</p>
+          </div>
+          <div class="case-card">
+            <span class="case-card__tag">Проектный институт, Москва</span>
+            <h3>Экспресс-обследование помещений перед сдачей</h3>
+            <p>Переносные Инспектрон A8 Pro используются для приёмочных измерений офисов и лабораторий: 8 параметров за один замер, отчёт с карты microSD формируется за 10 минут без постобработки.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="lead-form" id="lead-form">
       <div class="container">
         <h2>Получить техническую спецификацию под вашу задачу</h2>
         <p class="lead-form__subtitle">Заполните форму, и мы подготовим коммерческое предложение в течение 24 часов</p>
         <form class="lead-form__wrapper" action="https://formspree.io/f/movgnzzk" method="POST">
+          <input type="hidden" name="_subject" value="Заявка с сайта inspektron.ru (index.html)">
+                    <input type="hidden" name="_next" value="https://inspektron.ru/thank-you.html">
+                    <input type="text" name="_gotcha" class="hp-field" tabindex="-1" autocomplete="off">
           <div class="form-grid">
             <div class="form-group">
               <label for="name">Имя *</label>
@@ -308,7 +355,7 @@
                 <option value="det100">Инспектрон-100</option>
                 <option value="det200">Инспектрон-200</option>
                 <option value="det300">Инспектрон-300</option>
-                <option value="a8pro">Инспектрон A8-Pro</option>
+                <option value="a8pro">Инспектрон A8 Pro</option>
                 <option value="other">Другое</option>
               </select>
             </div>
@@ -336,6 +383,7 @@
           <h2>Анализаторы воздуха российского производства</h2>
           <p>Компания «Инспектрон» производит высокоточные анализаторы и датчики качества воздуха для промышленного, экологического и медицинского применения. Наши приборы разработаны с учётом требований российских стандартов ГОСТ и проходят обязательную поверку перед отгрузкой.</p>
           <p>В каталоге представлены стационарные и переносные анализаторы CO₂, TVOC, формальдегида (HCHO), взвешенных частиц PM1/PM2.5/PM10. Все модели оснащены интерфейсами 4–20 мА, RS-485 и поддержкой протокола Modbus для интеграции с системами автоматизации SCADA.</p>
+          <p>Флагманская модель 2026 года — переносной анализатор Инспектрон A8 Pro: восемь параметров качества воздуха, цветной сенсорный дисплей и до 10 часов автономной работы в корпусе IP65.</p>
           <p>Производство расположено в Новосибирске. Каждый прибор комплектуется паспортом, руководством по эксплуатации и протоколом поверки. Гарантия — 24 месяца с момента поставки.</p>
         </div>
       </div>
@@ -355,6 +403,7 @@
             <li><a href="det100.html">Инспектрон-100</a></li>
             <li><a href="det200.html">Инспектрон-200</a></li>
             <li><a href="det300.html">Инспектрон-300</a></li>
+            <li><a href="a8-pro.html">Инспектрон A8 Pro</a></li>
             <li><a href="catalog.html">Каталог</a></li>
           </ul>
         </nav>
@@ -368,13 +417,13 @@
         </nav>
         <div class="footer__contacts">
           <h4>Контакты</h4>
-          <p>г. Новосибирск, ул. Ленина, д.37, корп.7</p>
-          <p><a href="tel:+73833600000">+7 (383) 360-45-32</a></p>
+          <p>630099, г. Новосибирск, ул. Ленина, д. 37, офис 412</p>
+          <p><a href="tel:+73833604532">+7 (383) 360-45-32</a></p>
           <p><a href="mailto:sales@inspektron.ru">sales@inspektron.ru</a></p>
         </div>
       </div>
       <div class="footer__bottom">
-        <p>© 2024 Инспектрон. Все права защищены.</p>
+        <p>© 2010–2026 ООО «Инспектрон». Все права защищены.</p>
         <p><a href="privacy.html">Политика конфиденциальности</a></p>
       </div>
     </div>
@@ -388,6 +437,9 @@
     <h3>Обратный звонок</h3>
     <p>Оставьте номер телефона, и мы перезвоним вам в течение 15 минут</p>
     <form action="https://formspree.io/f/movgnzzk" method="POST">
+          <input type="hidden" name="_subject" value="Заявка с сайта inspektron.ru (index.html)">
+                    <input type="hidden" name="_next" value="https://inspektron.ru/thank-you.html">
+                    <input type="text" name="_gotcha" class="hp-field" tabindex="-1" autocomplete="off">
       <div class="form-group">
         <label for="popup-name">Имя *</label>
         <input type="text" id="popup-name" name="name" required>
@@ -411,26 +463,5 @@
 
 <button class="popup-trigger" onclick="openPopup()">Заказать звонок</button>
 
-<script>
-function openPopup() {
-  document.getElementById("popupForm").classList.add("active");
-}
-
-function closePopup() {
-  document.getElementById("popupForm").classList.remove("active");
-}
-
-document.getElementById("popupForm").addEventListener("click", function(e) {
-  if (e.target === this) {
-    closePopup();
-  }
-});
-
-document.addEventListener("keydown", function(e) {
-  if (e.key === "Escape") {
-    closePopup();
-  }
-});
-</script>
 </body>
 </html>

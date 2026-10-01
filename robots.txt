@@ -1,5 +1,7 @@
 User-agent: *
 Allow: /
+Disallow: /thank-you.html
+Disallow: /fonts/ttf/
 
 Sitemap: https://inspektron.ru/sitemap.xml
 

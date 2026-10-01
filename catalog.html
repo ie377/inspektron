@@ -19,16 +19,17 @@
   <title>Каталог — анализаторы воздуха Инспектрон</title>
   <meta name="description" content="Каталог анализаторов воздуха российского производства. Инспектрон-100, 200, 300. Стационарные и переносные приборы.">
   <meta property="og:title" content="Каталог — Инспектрон">
-  <meta property="og:description" content="Каталог анализаторов воздуха российского производства. Инспектрон-100, 200, 300, A8-Pro.">
+  <meta property="og:description" content="Каталог анализаторов воздуха российского производства. Инспектрон-100, 200, 300, A8 Pro.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://inspektron.ru/catalog.html">
   <meta property="og:image" content="https://inspektron.ru/img/og-image.jpg">
   <meta property="og:site_name" content="Инспектрон">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/popup.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+  <link rel="alternate icon" type="image/png" href="img/favicon.png">
+  <link rel="canonical" href="https://inspektron.ru/catalog.html">
+  <link rel="stylesheet" href="css/fonts.css">
 </head>
 <body>
   <header class="header">
@@ -55,7 +56,7 @@
           <span></span>
         </button>
         <div class="header__contacts">
-          <a href="tel:+73833604531" class="header__phone">+7 (383) 360-45-32</a>
+          <a href="tel:+73833604532" class="header__phone">+7 (383) 360-45-32</a>
           <a href="contacts.html" class="header__callback">Заказать звонок</a>
         </div>
       </div>
@@ -99,7 +100,7 @@
             </thead>
             <tbody>
               <tr>
-                <td><strong><a href="det100.html">Инспектрон-100</a></strong></td>
+                <td class="model-cell"><img src="img/det100.jpg" alt="Инспектрон-100" class="product-thumb" loading="lazy" width="56" height="56"><strong><a href="det100.html">Инспектрон-100</a></strong></td>
                 <td>CO₂, температура, влажность</td>
                 <td>400–5000 ppm</td>
                 <td>±2%</td>
@@ -114,7 +115,7 @@
                 </td>
               </tr>
               <tr>
-                <td><strong><a href="det200.html">Инспектрон-200</a></strong></td>
+                <td class="model-cell"><img src="img/det200.jpg" alt="Инспектрон-200" class="product-thumb" loading="lazy" width="56" height="56"><strong><a href="det200.html">Инспектрон-200</a></strong></td>
                 <td>TVOC, HCHO, PM2.5, PM10</td>
                 <td>0–1000 ppb / 0–1000 μg/m³</td>
                 <td>±5%</td>
@@ -129,7 +130,7 @@
                 </td>
               </tr>
               <tr>
-                <td><strong><a href="det300.html">Инспектрон-300</a></strong></td>
+                <td class="model-cell"><img src="img/det300.jpg" alt="Инспектрон-300" class="product-thumb" loading="lazy" width="56" height="56"><strong><a href="det300.html">Инспектрон-300</a></strong></td>
                 <td>CO₂, TVOC, HCHO, PM, температура, влажность</td>
                 <td>Комбинированный</td>
                 <td>±2–5%</td>
@@ -144,7 +145,7 @@
                 </td>
               </tr>
               <tr>
-                <td><strong><a href="a8-pro.html">Инспектрон A8-Pro</a></strong> <span style="color: var(--success); font-size: 0.75rem;">НОВИНКА</span></td>
+                <td class="model-cell"><img src="img/a8-pro.jpg" alt="Инспектрон A8 Pro" class="product-thumb" loading="lazy" width="56" height="56"><strong><a href="a8-pro.html">Инспектрон A8 Pro</a></strong> <span style="color: var(--success); font-size: 0.75rem;">НОВИНКА</span></td>
                 <td>CO₂, TVOC, HCHO, PM1, PM2.5, PM10, температура, влажность</td>
                 <td>8 параметров</td>
                 <td>±2–5%</td>
@@ -161,6 +162,7 @@
             </tbody>
           </table>
         </div>
+        <p class="price-note">Цены ориентировочные, с НДС 20%. Итоговая стоимость зависит от комплектации и количества приборов и фиксируется в коммерческом предложении. Наличие на складе уточняйте в отделе продаж.</p>
       </div>
     </section>
 
@@ -169,6 +171,9 @@
         <h2>Нужна консультация по выбору?</h2>
         <p class="lead-form__subtitle">Свяжитесь с нашими инженерами для подбора оптимального решения</p>
         <form class="lead-form__wrapper" action="https://formspree.io/f/movgnzzk" method="POST">
+          <input type="hidden" name="_subject" value="Заявка с сайта inspektron.ru (catalog.html)">
+                    <input type="hidden" name="_next" value="https://inspektron.ru/thank-you.html">
+                    <input type="text" name="_gotcha" class="hp-field" tabindex="-1" autocomplete="off">
           <div class="form-grid">
             <div class="form-group">
               <label for="name">Имя *</label>
@@ -193,8 +198,7 @@
                 <option value="det100">Инспектрон-100</option>
                 <option value="det200">Инспектрон-200</option>
                 <option value="det300">Инспектрон-300</option>
-                <option value="a8pro">Инспектрон A8-Pro</option>
-                <option value="det300">Инспектрон-300</option>
+                <option value="a8pro">Инспектрон A8 Pro</option>
                 <option value="other">Требуется консультация</option>
               </select>
             </div>
@@ -230,6 +234,7 @@
             <li><a href="det100.html">Инспектрон-100</a></li>
             <li><a href="det200.html">Инспектрон-200</a></li>
             <li><a href="det300.html">Инспектрон-300</a></li>
+            <li><a href="a8-pro.html">Инспектрон A8 Pro</a></li>
             <li><a href="catalog.html">Каталог</a></li>
           </ul>
         </nav>
@@ -243,13 +248,13 @@
         </nav>
         <div class="footer__contacts">
           <h4>Контакты</h4>
-          <p>г. Новосибирск, ул. Примерная, 1</p>
-          <p><a href="tel:+73833600000">+7 (383) 360-45-32</a></p>
+          <p>630099, г. Новосибирск, ул. Ленина, д. 37, офис 412</p>
+          <p><a href="tel:+73833604532">+7 (383) 360-45-32</a></p>
           <p><a href="mailto:sales@inspektron.ru">sales@inspektron.ru</a></p>
         </div>
       </div>
       <div class="footer__bottom">
-        <p>© 2024 Инспектрон. Все права защищены.</p>
+        <p>© 2010–2026 ООО «Инспектрон». Все права защищены.</p>
         <p><a href="privacy.html">Политика конфиденциальности</a></p>
       </div>
     </div>
@@ -263,6 +268,9 @@
     <h3>Обратный звонок</h3>
     <p>Оставьте номер телефона, и мы перезвоним вам в течение 15 минут</p>
     <form action="https://formspree.io/f/movgnzzk" method="POST">
+          <input type="hidden" name="_subject" value="Заявка с сайта inspektron.ru (catalog.html)">
+                    <input type="hidden" name="_next" value="https://inspektron.ru/thank-you.html">
+                    <input type="text" name="_gotcha" class="hp-field" tabindex="-1" autocomplete="off">
       <div class="form-group">
         <label for="popup-name">Имя *</label>
         <input type="text" id="popup-name" name="name" required>
@@ -286,26 +294,5 @@
 
 <button class="popup-trigger" onclick="openPopup()">Заказать звонок</button>
 
-<script>
-function openPopup() {
-  document.getElementById("popupForm").classList.add("active");
-}
-
-function closePopup() {
-  document.getElementById("popupForm").classList.remove("active");
-}
-
-document.getElementById("popupForm").addEventListener("click", function(e) {
-  if (e.target === this) {
-    closePopup();
-  }
-});
-
-document.addEventListener("keydown", function(e) {
-  if (e.key === "Escape") {
-    closePopup();
-  }
-});
-</script>
 </body>
 </html>
